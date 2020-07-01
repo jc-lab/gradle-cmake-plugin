@@ -13,3 +13,8 @@ It was created with reference to https://github.com/gradle/native-samples/tree/m
   - Task: `gradlew assembleDebug`
   - Task: `gradlew assembleRelease`
 
+# License
+
+Apache-2.0
+
+See [LICENSE](./LICENSE)
