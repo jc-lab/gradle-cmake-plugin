@@ -13,7 +13,7 @@ import org.gradle.api.tasks.TaskProvider;
  */
 public class CMakeLibraryPlugin implements Plugin<Project> {
     public void apply(final Project project) {
-        project.getPluginManager().apply("org.gradle.samples.wrapped-native-library");
+        project.getPluginManager().apply("kr.jclab.gradle.cmakeplugin.wrapped-native-library");
 
         // Add a CMake extension to the Gradle model
         final CMakeExtension extension = project.getExtensions().create("cmake", CMakeExtension.class, project.getLayout(), project.getObjects());

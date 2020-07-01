@@ -44,7 +44,7 @@ public class WrappedNativeLibraryPlugin implements Plugin<Project> {
 
     @Override
     public void apply(final Project project) {
-        project.getPluginManager().apply("org.gradle.samples.wrapped-native-base");
+        project.getPluginManager().apply("kr.jclab.gradle.cmakeplugin.wrapped-native-base");
 
         /*
          * Define some configurations to present the outputs of this build

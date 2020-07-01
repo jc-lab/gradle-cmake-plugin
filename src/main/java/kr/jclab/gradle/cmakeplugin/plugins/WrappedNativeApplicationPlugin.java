@@ -9,7 +9,7 @@ import org.gradle.language.cpp.CppBinary;
 public class WrappedNativeApplicationPlugin implements Plugin<Project> {
     @Override
     public void apply(Project project) {
-        project.getPluginManager().apply("org.gradle.samples.wrapped-native-base");
+        project.getPluginManager().apply("kr.jclab.gradle.cmakeplugin.wrapped-native-base");
 
         // Add configurations for incoming dependencies
         final Usage cppApiUsage = project.getObjects().named(Usage.class, Usage.C_PLUS_PLUS_API);

@@ -12,7 +12,7 @@ import org.gradle.api.tasks.TaskProvider;
  */
 public class CMakeApplicationPlugin implements Plugin<Project> {
     public void apply(final Project project) {
-        project.getPluginManager().apply("org.gradle.samples.wrapped-native-application");
+        project.getPluginManager().apply("kr.jclab.gradle.cmakeplugin.wrapped-native-application");
 
         /*
          * Create some tasks to drive the CMake build

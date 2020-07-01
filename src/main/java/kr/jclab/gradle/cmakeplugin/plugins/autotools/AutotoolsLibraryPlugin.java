@@ -10,7 +10,7 @@ public class AutotoolsLibraryPlugin implements Plugin<Project> {
     @Override
     public void apply(final Project project) {
         project.getPluginManager().apply("lifecycle-base");
-        project.getPluginManager().apply("org.gradle.samples.wrapped-native-library");
+        project.getPluginManager().apply("kr.jclab.gradle.cmakeplugin.wrapped-native-library");
 
         final AutotoolsExtension extension = project.getExtensions().create("autotools", AutotoolsExtension.class, project.getObjects());
 
